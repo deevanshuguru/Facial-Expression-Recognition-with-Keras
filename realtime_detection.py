@@ -1,3 +1,4 @@
+# To detect emotions in live media
 import cv2
 import numpy as np
 import  as tf
@@ -14,7 +15,7 @@ conf.gpu_options.per_process_gpu_memory_fraction = 0.1
 set_session(tf.Session(config=conf))
 
 frontalface = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
-''' Imported ***** '''
+''' Imported haarcascade_frontalface_alt2.xml '''
 
 live_video = cv2.VideoCapture(0)
 model = load_model('models/kaggle_model.hdf5')
